@@ -6,24 +6,57 @@
     <link rel="stylesheet" href="css/master.css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title></title>
+    <title>Survey Says...</title>
   </head>
   <body>
     <div class="container">
       <h1>SURVEY</h1>
-      <!-- Name form  -->
+<!-- Name form  -->
       <form id="form1">
         <div class="form-group">
-          <label for="name">What's your name?</label>
+          <h4>What's your name?</h4>
           <input type="text" id="name" class="form-control">
         </div>
-
-
-
-
-      <!-- Favorite food -->
-      <!-- Favorite Music -->
-      <!-- Favorite Color -->
+<!-- Favorite food radio list -->
+        <div class="radio">
+          <h4>What's your favorite food?</h4>
+          <label for="food">
+            <input type="radio" name="food" value="chicken" checked>
+            Chicken
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="food" value="salad">
+            Salad
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="food" value="spaghetti">
+            Spaghetti
+          </label>
+        </div>
+<!-- Favorite Music -->
+        <h4>What's your favorite music genre?</h4>
+        <select class="form-control" id="beverage">
+          <option>Ambient Folk-Metal</option>
+          <option>Scandanavian Death-Techno</option>
+          <option>Polka Punk</option>
+          <option>Pop Euro-Grunge</option>
+          <option>Turkey Electro-Sub-Pop</option>
+          <option>Taylor Swift</option>
+        </select>
+<!-- Favorite Color -->
+      <h4>Click box below to pick your favorite color:</h4>
+      <div class="form-group">
+        <input id="color" class="form" type="color">
+      </div>
+<!-- Date of birth -->
+      <div class="form-group">
+        <h4>What is your date of birth?</h4>
+        <input id="born" class="form" type="date">
+      </div>
       <button type="submit" class="btn-info" name="button">Submit your info!</button>
       </form>
     </div>
